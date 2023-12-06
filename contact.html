@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+   <!--Author: Nkosinathi Sibanyoni---->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT</title>
+    <link rel="stylesheet" href="../css folder/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.2.0/css/all.min.css" >
+       
+</head>
+<body>
+  <section class="sub-header">
+    <nav>
+      <a href="../HTML folder/Home.html"><img src="../images/uafclogo.png"></a>
+     <div class="nav-links" id="navLinks" >
+         <i class="fa-solid fa-xmark"onclick="hideMenu()"></i>
+         <ul>
+             <li><a href="../HTML folder/Home.html">HOME</a></li>
+             <li><a href="">LEADERSHIP</a></li>
+             <li><a href="../HTML folder/sermons.html">SERMONS</a></li>
+             <li><a href="../HTML folder/contact.html">CONTACT</a></li>
+             
+         </ul>
+     </div>
+     <i class="fa-solid fa-bars"onclick="showMenu()"></i>
+    </nav>
+    <h1>Contact Us</h1>
+  </section>
+  <!--------Contact Us ----------->
+
+  <section class="location" >
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3594.9212980856187!2d28.366617975252463!3d-25.70702967738634!2m3!1f0!2f0!3f0!3
+    m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e955f67f98711b1%3A0x83ec2ec2d8424219!2sUAFC%20Riverside%20Assembly!5e0!3m2!1sen!2sza!4v1701329837346!5m2!1sen!2sza" 
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <section class="contact-us">
+  <div class="row">
+    <div class="contact-col">
+      <div>
+        <i class="fa-solid fa-house"></i>
+        <span>
+          <h5>10413 David Lukhele St, Mamelodi</h5>
+          <p>S&S, Pretoria, 0122, Pretoria, 1041</p>
+        </span>
+    </div>
+    <div>
+      <i class="fa-solid fa-phone"></i>
+      <span>
+        <h5><a href="tel:+27 81 520 5267">+27 81 520 5267</a></h5> 
+        <p>Send us a message</p>
+      </span>
+  </div>
+  <div>
+    <i class="fa-solid fa-envelope"></i>
+    <span>
+      <h5><a href="mailto:info@uafcriverside.co.za">info@uafcriverside.co.za</a></h5>
+      <p>Email us your query</p>
+    </span>
+</div>
+    <div class="contact-col">
+    <form action="../form-handle/form-handle.php" method="post">
+      <input type="text"  name="name" placeholder="Enter your names " required>
+      <input type="text"  name="surname" placeholder="Enter your surname" required>
+      <input type="email" name="email" placeholder="Enter your email address " required>
+      <textarea rows="8"  name="message" placeholder="Message" required></textarea>
+      <button type="submit" class="hero-btn red-btn">Send Message</button>
+
+    </form>
+    </div>
+  </div>
+  </section>
+  <footer class="footer">
+    <div class="footer left">
+        <a href="../HTML folder/Home.html"><img src="../images/uafclogo.png"></a>
+        <p>We are a spiritual home where Jesus Christ reigns as King.</p>
+        <div class="socials">
+            <a href="https://www.facebook.com/uafcmamelodiriverside"><i class="fa-brands fa-facebook"></i></a>
+            <a href="tel:+27 81 520 5267"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="mailto:info@uafcriverside.co.za"><i class="fa-solid fa-envelope"></i></a>
+        </div>  
+    </div>
+<ul class="footer-right">
+    <li>
+       
+        <h2>Quick Links</h2>
+        <ul class="box">
+            <li><a href="">HOME</a></li>
+            <li><a href="">LEADERSHIP</a></li>
+            <li><a href="../HTML folder/sermons.html">SERMONS</a></li>
+            <li><a href="../HTML folder/contact.html">CONTACT</a></li>
+        </ul>
+        </li>
+        <li class="contact">
+        <h2>Contact us</h2>
+        <ul class="box">
+            <li>Telephone:</li>
+            <li>+27 81 520 5267</li>
+            <li>Email:</li>
+            <li><a href="mailto:info@uafcriverside.co.za">info@uafcriverside.co.za</a></li>
+        </ul>
+    </li>
+<li>
+    <h2>Address</h2>
+        <ul class="box">
+            <li>10413 David Lukhele St</li>
+            <li> Mamelodi S&S</li>
+            <li> Pretoria, 0122</li>
+            
+        </ul>
+    </li>
+</ul>
+<div class="footer-bottom">
+    <p>All Rights Reserved by &copy;UAFC RIVERSIDE 2023</p>
+</div>
+</footer>
+    <!--Javascript Toddle Menu-->
+<script>
+  var navLinks = document.getElementById("navLinks");
+  function showMenu(){
+      navLinks.style.right = "0";
+  }
+  function hideMenu(){
+      navLinks.style.right = "-200px";
+  }
+
+</script>
+</body>
+</html>
